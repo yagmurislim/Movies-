@@ -1,0 +1,65 @@
+package com.example.movie.entity;
+
+import java.util.Objects;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "actor")
+public class Actor {
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private String id;
+private String fullName;
+public String getId() {
+	return id;
+}
+public void setId(String id) {
+	this.id = id;
+}
+public String getFullName() {
+	return fullName;
+}
+public void setFullName(String fullName) {
+	this.fullName = fullName;
+}
+@Override
+public int hashCode() {
+	return Objects.hash(fullName, id);
+}
+@Override
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Actor other = (Actor) obj;
+	return Objects.equals(fullName, other.fullName) && Objects.equals(id, other.id);
+}
+public Actor(String id, String fullName) {
+	super();
+	this.id = id;
+	this.fullName = fullName;
+}
+public Actor() {
+	super();
+}
+@Override
+public String toString() {
+	return "Actor [id=" + id + ", fullName=" + fullName + "]";
+}
+
+
+
+//constructor,getter and setter,equals and hashcode,To String
+
+
+	
+	
+}

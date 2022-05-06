@@ -1,0 +1,7 @@
+package com.example.movie.service.business;
+
+import com.example.movie.service.ScoreService;
+
+public class ScoreServiceImpl implements ScoreService {
+
+}

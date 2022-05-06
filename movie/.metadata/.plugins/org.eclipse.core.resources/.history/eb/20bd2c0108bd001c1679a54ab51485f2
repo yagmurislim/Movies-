@@ -1,0 +1,38 @@
+package com.example.movie.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Table(name = "actor")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
+public class Actor {
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column(name= "identity")
+private Long identity;
+@Column(name="fullName")
+private String fullName;
+
+//constructor,getter and setter,equals and hashcode,To String
+
+
+	
+	
+}

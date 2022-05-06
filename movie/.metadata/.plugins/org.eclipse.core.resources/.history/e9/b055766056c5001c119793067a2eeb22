@@ -1,0 +1,13 @@
+package com.example.movie.service.business;
+
+import org.springframework.stereotype.Service;
+
+import com.example.movie.service.MovieCategoryService;
+
+@Service
+public class MovieCategoryServiceImpl implements MovieCategoryService {
+
+	
+	
+	
+}

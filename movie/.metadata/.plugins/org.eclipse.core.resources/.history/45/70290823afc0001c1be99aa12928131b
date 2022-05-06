@@ -1,0 +1,31 @@
+package com.example.movie.service.business;
+
+import org.springframework.stereotype.Service;
+
+import com.example.movie.dto.request.CommentRequest;
+import com.example.movie.dto.response.CommentResponse;
+import com.example.movie.service.CommentService;
+@Service
+public class CommentServiceImpl implements CommentService {
+
+	@Override
+	public CommentResponse findById(Long comment_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Long comment_id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public CommentResponse updateComment(CommentRequest comment) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+}

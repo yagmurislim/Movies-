@@ -1,0 +1,27 @@
+package com.example.movie.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="category")
+public class MovieCategory {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="identity")
+	private Long identity;
+	@Column(name="comedy")
+	private String comedy;
+	@Column(name="tradegy")
+	private String tradegy;
+	@Column(name="horror")
+	private String horror;
+	@Column(name="dram")
+	private String dram;
+	
+}

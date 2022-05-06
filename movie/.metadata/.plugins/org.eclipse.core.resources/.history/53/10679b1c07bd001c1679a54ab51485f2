@@ -1,0 +1,88 @@
+package com.example.movie.entity;
+
+import java.util.Objects;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="category")
+public class MovieCategory {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
+	private String comedy;
+	private String tradegy;
+	private String horror;
+	private String dram;
+	public MovieCategory() {
+		super();
+	}
+	public MovieCategory(int id, String comedy, String tradegy, String horror, String dram) {
+		super();
+		this.id = id;
+		this.comedy = comedy;
+		this.tradegy = tradegy;
+		this.horror = horror;
+		this.dram = dram;
+	}
+	@Override
+	public String toString() {
+		return "MovieCategory [id=" + id + ", comedy=" + comedy + ", tradegy=" + tradegy + ", horror=" + horror
+				+ ", dram=" + dram + "]";
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(comedy, dram, horror, id, tradegy);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		MovieCategory other = (MovieCategory) obj;
+		return Objects.equals(comedy, other.comedy) && Objects.equals(dram, other.dram)
+				&& Objects.equals(horror, other.horror) && id == other.id && Objects.equals(tradegy, other.tradegy);
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getComedy() {
+		return comedy;
+	}
+	public void setComedy(String comedy) {
+		this.comedy = comedy;
+	}
+	public String getTradegy() {
+		return tradegy;
+	}
+	public void setTradegy(String tradegy) {
+		this.tradegy = tradegy;
+	}
+	public String getHorror() {
+		return horror;
+	}
+	public void setHorror(String horror) {
+		this.horror = horror;
+	}
+	public String getDram() {
+		return dram;
+	}
+	public void setDram(String dram) {
+		this.dram = dram;
+	}
+	
+	
+	
+
+}

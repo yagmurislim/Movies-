@@ -1,0 +1,26 @@
+package com.example.movie.service.business;
+
+import org.springframework.stereotype.Service;
+
+import com.example.movie.dto.response.MovieCategoryResponse;
+import com.example.movie.service.MovieCategoryService;
+
+@Service
+public class MovieCategoryServiceImpl implements MovieCategoryService {
+
+	@Override
+	public MovieCategoryResponse findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MovieCategoryResponse deleteById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	
+}

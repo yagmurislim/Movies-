@@ -1,0 +1,35 @@
+package com.example.movie.controller;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.annotation.RequestScope;
+
+import com.example.movie.dto.response.ScoreResponse;
+import com.example.movie.service.ScoreService;
+
+@RestController
+@CrossOrigin
+@RequestMapping("/score")
+@RequestScope
+
+public class ScoreController {
+	private final ScoreService scoreService;
+
+	public ScoreController(ScoreService scoreService) {
+		
+		this.scoreService = scoreService;
+	}
+	
+	@GetMapping("{/id}")
+	public ScoreResponse FindById(@PathVariable  Long id ) {
+		return (ScoreResponse) scoreService.findById(id);
+	}
+	
+	
+	
+	
+
+}

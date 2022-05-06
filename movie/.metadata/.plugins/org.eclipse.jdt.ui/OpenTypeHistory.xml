@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=movie/C:\/DEVEL\/stage\/opt\/jdk-17.0.2\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/&lt;java.nio.file.attribute(UserPrincipal.class[UserPrincipal" modifiers="1537" timestamp="1638903556000"/>
+    <typeInfo handle="=movie/C:\/DEVEL\/stage\/opt\/jdk-17.0.2\/lib\/jrt-fs.jar`java.xml=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/&lt;org.w3c.dom(Comment.class[Comment" modifiers="1537" timestamp="1638903556000"/>
+    <typeInfo handle="=movie/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.movie.service{ActorService.java[ActorService" modifiers="513" timestamp="1650355564436"/>
+    <typeInfo handle="=movie/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.movie.service{UserService.java[UserService" modifiers="513" timestamp="1650546865504"/>
+    <typeInfo handle="=movie/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.movie.service{CommentService.java[CommentService" modifiers="513" timestamp="1650544163862"/>
+    <typeInfo handle="=movie/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.movie.repository{CommentRepository.java[CommentRepository" modifiers="513" timestamp="1650299083508"/>
+    <typeInfo handle="=movie/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.movie.service{MovieService.java[MovieService" modifiers="513" timestamp="1650877042589"/>
+    <typeInfo handle="=movie/C:\/Users\/sahabt\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.6.3\/spring-data-jpa-2.6.3.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.6.3=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1648537664710"/>
+    <typeInfo handle="=movie/C:\/Users\/sahabt\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.6.3\/spring-data-jpa-2.6.3.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.6.3=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.mapping(JpaPersistentProperty.class[JpaPersistentProperty" modifiers="1537" timestamp="1648537664710"/>
+    <typeInfo handle="=movie/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.movie.service{ScoreService.java[ScoreService" modifiers="513" timestamp="1650923572163"/>
+</typeInfoHistroy>

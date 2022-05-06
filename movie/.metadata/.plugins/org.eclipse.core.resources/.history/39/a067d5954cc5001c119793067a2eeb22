@@ -1,0 +1,48 @@
+package com.example.movie.service.business;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
+
+import com.example.movie.dto.request.ScoreRequest;
+import com.example.movie.dto.response.ScoreResponse;
+import com.example.movie.repository.ScoreRepository;
+import com.example.movie.service.ScoreService;
+
+@Service
+public class ScoreServiceImpl implements ScoreService {
+	private final ScoreRepository scoreRepository;
+	private ModelMapper modelMapper;
+	
+
+	public ScoreServiceImpl(ScoreRepository scoreRepository, ModelMapper modelMapper) {
+		
+		this.scoreRepository = scoreRepository;
+		this.modelMapper = modelMapper;
+	}
+
+	@Override
+	public ScoreResponse findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ScoreResponse addScore(ScoreRequest score) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ScoreResponse updateScore(ScoreRequest score) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}
